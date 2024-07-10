@@ -1,0 +1,21 @@
+.iconos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2196F3;
+    padding: 2px;
+    
+    .icono {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 0px;
+        font-size: 1em;
+        text-align: center;
+
+        img{
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+
+}
