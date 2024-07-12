@@ -11,12 +11,14 @@ let tablaPrincipal = document.querySelector(".tabla-principal-especies");
 
 // Template datos de especies
 let rowEspecies = document.querySelector(".tr-datos");
+let rowEspeciesArchivados = document.querySelector("..tr-datos-archivados");
 
 
 
 // Templates para clonar al momento de agregar nuevos datos de especies
 let especiesTemplates = {
     "especiesDatos": rowEspecies.cloneNode(true),
+    "ArchivadosEspecies": rowEspeciesArchivados.cloneNode(true)
 };
 
 // Quito del documento los templates

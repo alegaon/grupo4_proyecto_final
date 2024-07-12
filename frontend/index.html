@@ -6,94 +6,62 @@
     <title>🐟   dePesca</title>
 </head>
 <body>
-<main>
-<h2><span>Especies</span></h2>
-<h3><a href="pages/agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
-<table>
-    <tbody>
-        <tr>
-            <th>Nombre Vulgar</th>
-            <th>Nombre Cientifico</th>
-            <th>Largo Max</th>
-            <th>Peso Promedio</th>
-            <th>Donde pescar</th>
-            <th>Epoca de Pesca</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>Boga</td>
-            <td><b>Leporinus Obtusidens</b></td>
-            <td>50cm</td>
-            <td>De 2 a 5 KG</td>
-            <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-            <td>De primavera hasta principios de otoño</td>
-            <td>
-                <div class="action-btn">
-                    <button type="submit" class="btn">Archivar</button>
-                    <button type="submit" class="btn">Editar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Boga</td>
-            <td><b>Leporinus Obtusidens</b></td>
-            <td>50cm</td>
-            <td>De 2 a 5 KG</td>
-            <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-            <td>De primavera hasta principios de otoño</td>
-            <td>
-                <div class="action-btn">
-                    <button type="submit" class="btn">Archivar</button>
-                    <button type="submit" class="btn">Editar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Boga</td>
-            <td><b>Leporinus Obtusidens</b></td>
-            <td>50cm</td>
-            <td>De 2 a 5 KG</td>
-            <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-            <td>De primavera hasta principios de otoño</td>
-            <td>
-                <div class="action-btn">
-                    <button type="submit" class="btn">Archivar</button>
-                    <button type="submit" class="btn">Editar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Boga</td>
-            <td><b>Leporinus Obtusidens</b></td>
-            <td>50cm</td>
-            <td>De 2 a 5 KG</td>
-            <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-            <td>De primavera hasta principios de otoño</td>
-            <td>
-                <div class="action-btn">
-                    <button type="submit" class="btn">Archivar</button>
-                    <button type="submit" class="btn">Editar</button>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>Boga</td>
-            <td><b>Leporinus Obtusidens</b></td>
-            <td>50cm</td>
-            <td>De 2 a 5 KG</td>
-            <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-            <td>De primavera hasta principios de otoño</td>
-            <td>
-                <div class="action-btn">
-                    <button type="submit" class="btn">Archivar</button>
-                    <button type="submit" class="btn">Editar</button>
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+    <header>
+        <h2 id="titulo-especies"><span>Especies</span></h2>
+    </header>
+    <main>
+    <div class="menu-basico">
+        <h3 id="titulo-agregar-nueva-especie"><a href="pages/agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
+        <h3 id="titulo-mostrar-especies-archivadas"><a href="pages/especies_archivadas.html">Mostrar Especies Archivadas</a></h3>
+    </div>
+    <table id="tabla-principal-especies" class="tabla-principal-especies">
+        <tbody id="tbody-especies" class="tbody-especies">
+            <tr class="tr-titulos">
+                <th class="th-nombre-vulgar">Nombre Vulgar</th>
+                <th class="th-nombre-cientifico">Nombre Cientifico</th>
+                <th class="th-largo-max">Largo Max</th>
+                <th class="th-peso-promedio">Peso Promedio</th>
+                <th class="th-donde-pescar">Donde pescar</th>
+                <th class="th-epoca-de-pesca">Epoca de Pesca</th>
+                <th class="th-acciones-btn"></th>
+            </tr>
+            <tr class="tr-datos">
+                <td class="td-nombre-vugar">Boga</td>
+                <td class="td-nombre-cientifico"><b>Leporinus Obtusidens</b></td>
+                <td class="td-largo-max">50cm</td>
+                <td class="td-peso-promedio">De 2 a 5 KG</td>
+                <td class="td-donde-pescar">Río Paraná, Uruguay y en los ríos de la región del litoral</td>
+                <td class="td-epoca-de-pesca">De primavera hasta principios de otoño</td>
+                <td class="td-acciones-btn">
+                    <div class="action-btn">
+                        <button id="btn-archivar" type="submit" class="btn">Archivar</button>
+                        <button id="btn-editar" type="submit" class="btn">Editar</button>
+                    </div>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>Boga</td>
+                <td><b>Leporinus Obtusidens</b></td>
+                <td>50cm</td>
+                <td>De 2 a 5 KG</td>
+                <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
+                <td>De primavera hasta principios de otoño</td>
+                <td>
+                    <div class="action-btn">
+                        <button type="submit" class="btn">Archivar</button>
+                        <button type="submit" class="btn">Editar</button>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    </main>
 
 
-</main>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
