@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
+    <title>🐟   dePesca</title>
+</head>
+<body>
+    <header>
+        <h2 id="titulo_especies_volver"><span><a href="../index.html">Volver a Especies</a></span></h2>
+    </header>
+    <main>
+        <h1>Especies Archivadas</h1>
+        <div class="menu_basico">
+            <h3 id="titulo_agregar_nueva_especie"><a href="agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
+        </div>
+        <table id="tabla_principal_especies" class="tabla_principal_especies archivadas">
+            <tbody id="tbody_especies" class="tbody_especies">
+                <tr class="tr_titulos">
+                    <th class="th_nombre_vulgar">Nombre Vulgar</th>
+                    <th class="th_nombre_cientifico">Nombre Cientifico</th>
+                    <th class="th_largo_max">Largo Max</th>
+                    <th class="th_peso_promedio">Peso Promedio</th>
+                    <th class="th_donde_pescar">Donde pescar</th>
+                    <th class="th_epoca_de_pesca">Epoca de Pesca</th>
+                    <th class="th_acciones_btn"></th>
+                </tr>
+                <tr class="tr_datos_archivados">
+                    <td class="td_nombre_vugar">Boga</td>
+                    <td class="td_nombre_cientifico"><b>Leporinus Obtusidens</b></td>
+                    <td class="td_largo_max">50cm</td>
+                    <td class="td_peso_promedio">De 2 a 5 KG</td>
+                    <td class="td_donde_pescar">Río Paraná, Uruguay y en los ríos de la región del litoral</td>
+                    <td class="td_epoca_de_pesca">De primavera hasta principios de otoño</td>
+                    <td class="td_acciones_btn">
+                        <div class="action_btn">
+                            <button id="btn_desarchivar" type="submit" class="btn">Desarchivar</button>
+                            <button id="btn_editar" type="submit" class="btn">Editar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+    <script src="js/especies_archivadas.js"></script>
+
+</body>
+</html>

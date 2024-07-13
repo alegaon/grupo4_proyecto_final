@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../resources/img/fondo.jpg");
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo {
+    flex: 1;
+}
+
+.menu_basico {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section.menu_basico h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+}
+
+#tabla_especies {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+    table-layout: auto;
+    margin: 20px auto; /* Centrar la tabla */
+}
+
+#tabla_especies td, #tabla_especies th {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: center;
+    width: auto;
+    white-space: nowrap; /* Evita que el texto se ajuste automáticamente en múltiples líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) si el texto es demasiado largo */
+}
+
+#tabla_especies tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#tabla_especies th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #a0d4f1;
+    color: white;
+}
+
+.row_button {
+    padding: 3px 8px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+}
+
+#view_button {
+    background-color: #4CAF50;
+}
+
+#del_button {
+    background-color: #f44336;
+}
+
+.row_button:hover {
+    transform: scale(1.2);
+} 
+
+

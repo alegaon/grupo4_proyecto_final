@@ -2,16 +2,16 @@ let BASE_URL = 'http://localhost:5000';
 
 // Botones para administrar las especies
 let btnToActions = {
-    "Editar": document.querySelector("#btn-editar"),
-    "Archivar": document.querySelector("#btn-archivar")
+    "Editar": document.querySelector("#btn_editar"),
+    "Archivar": document.querySelector("#btn_archivar")
 }
 
 // tabla principal completa
-let tablaPrincipal = document.querySelector(".tabla-principal-especies");
+let tablaPrincipal = document.querySelector(".tabla_principal_especies");
 
 // Template datos de especies
-let rowEspecies = document.querySelector(".tr-datos");
-let rowEspeciesArchivados = document.querySelector("..tr-datos-archivados");
+let rowEspecies = document.querySelector(".tr_datos");
+let rowEspeciesArchivados = document.querySelector("..tr_datos_archivados");
 
 
 

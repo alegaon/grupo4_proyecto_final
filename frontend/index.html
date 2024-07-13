@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐟   dePesca</title>
+    <meta charset="UTF_8">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
+    <link rel="icon" href="resources/img/logo.svg" type="image/svg+xml">
+    <title>dePesca</title>
+
+    <!-- Incorporo estilos al html-->
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <h2 id="titulo-especies"><span>Especies</span></h2>
+        <section id="titulo">
+            <h1>Peces en la <br> Argentina</h1>
+        </section>
+        <section class="menu_basico">
+            <h3 id="titulo_agregar_nueva_especie"><a href="pages/agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
+            <h3 id="titulo_mostrar_especies_archivadas"><a href="pages/especies_archivadas.html">Mostrar Especies Archivadas</a></h3>
+        </section>
     </header>
     <main>
-    <div class="menu-basico">
-        <h3 id="titulo-agregar-nueva-especie"><a href="pages/agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
-        <h3 id="titulo-mostrar-especies-archivadas"><a href="pages/especies_archivadas.html">Mostrar Especies Archivadas</a></h3>
-    </div>
-    <table id="tabla-principal-especies" class="tabla-principal-especies">
-        <tbody id="tbody-especies" class="tbody-especies">
-            <tr class="tr-titulos">
-                <th class="th-nombre-vulgar">Nombre Vulgar</th>
-                <th class="th-nombre-cientifico">Nombre Cientifico</th>
-                <th class="th-largo-max">Largo Max</th>
-                <th class="th-peso-promedio">Peso Promedio</th>
-                <th class="th-donde-pescar">Donde pescar</th>
-                <th class="th-epoca-de-pesca">Epoca de Pesca</th>
-                <th class="th-acciones-btn"></th>
-            </tr>
-
-            <!-- este tr no aparece en el navegador -->
-            <tr class="tr-datos">
-                <td class="td-nombre-vugar">Boga</td>
-                <td class="td-nombre-cientifico"><b>Leporinus Obtusidens</b></td>
-                <td class="td-largo-max">50cm</td>
-                <td class="td-peso-promedio">De 2 a 5 KG</td>
-                <td class="td-donde-pescar">Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-                <td class="td-epoca-de-pesca">De primavera hasta principios de otoño</td>
-                <td class="td-acciones-btn">
-                    <div class="action-btn">
-                        <button id="btn-archivar" type="submit" class="btn">Archivar</button>
-                        <button id="btn-editar" type="submit" class="btn">Editar</button>
-                    </div>
-                </td>
-            </tr>
-            <!--  hasta aca -->
-
-            <!--  este tr si aparece -->
-            <tr>
-                <td>Boga</td>
-                <td><b>Leporinus Obtusidens</b></td>
-                <td>50cm</td>
-                <td>De 2 a 5 KG</td>
-                <td>Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-                <td>De primavera hasta principios de otoño</td>
-                <td>
-                    <div class="action-btn">
-                        <button type="submit" class="btn">Archivar</button>
-                        <button type="submit" class="btn">Editar</button>
-                    </div>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
+        <section>
+            <table id="tabla_especies" class="tabla_principal_especies">
+                <thead>
+                    <tr>
+                        <th>Nombre Vulgar</th>
+                        <th>Nombre Cientifico</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_cuerpo">
+                    <tr id="tabla_modelo">
+                        <td id="td_nombre_vulgar">Alfreds Futterkiste</td>
+                        <td id="td_nombre_cientifico">Maria Anders</td>
+                        <td>
+                            <button class="row_button" id="view_button">Ver</button>
+                            <button class="row_button" id="del_button">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
-
+    <script src="js/fetchAPI.js"></script>
     <script src="js/index.js"></script>
 
 </body>
