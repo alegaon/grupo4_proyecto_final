@@ -3,7 +3,8 @@ function  fetchAPI(url, method, callback, data = null) {
     // Donde:
     //      url: ruta a direccionar a la API
     //      method: GET, POST, PUT o DELETE
-    //      callback: es una funcion que se ejecuta una vez que el "then" esta disponible
+    //      callback: es una funcion que se ejecuta una vez que el "then" esta disponible.
+    //          -
     //      data: se utiliza para enviar datos a la API (POST, PUT y DELETE)
     const options = {
         method: method,
@@ -15,11 +16,21 @@ function  fetchAPI(url, method, callback, data = null) {
     };
 
     fetch(url, options)
-        .then(response => response.json())
+        .then(response => {
+            // Controlo si la repuesta de estado HTTP no está en el rango 200-299.
+            // dentro del response, viene el 'status'
+            if (!response.ok) {
+                const error = new Error('Server response was not ok');
+                error.status = response.status;
+                error.statusText = response.statusText;
+                throw error;
+            }
+            return response.json();
+        })
         .then(data => {
-            callback(data);
+            callback(null, data);
         })
         .catch(error => {
-            alert(`Algo salió mal. Error: ${error}`);
+            callback(error);
     });
 }
