@@ -18,6 +18,7 @@ header {
 
 #titulo {
     flex: 1;
+    font-size: 32px;
 }
 
 .menu_basico {
