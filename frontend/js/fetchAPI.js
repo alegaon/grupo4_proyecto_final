@@ -15,9 +15,11 @@ function  fetchAPI(url, method, callback, data = null) {
     };
 
     fetch(url, options)
-    .then(response => response.json())
-    .then(data => {
-        callback(data);
-    })
-    .catch(alert(`Algo salió mal. Error: ${error}`));
+        .then(response => response.json())
+        .then(data => {
+            callback(data);
+        })
+        .catch(error => {
+            alert(`Algo salió mal. Error: ${error}`);
+    });
 }
