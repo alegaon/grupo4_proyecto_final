@@ -8,32 +8,34 @@
 <body>
     <h2 id="titulo_especies_volver"><span><a href="../index.html">Volver a Especies</a></span></h2>
     <div class="wrapper">
-        <form action="">
+        <form id="speciesForm" action="javascript:void(0);">
             <h1>Agregar Nuevas Especies</h1>
             <div class="input_box">
-                <input type="text" placeholder="Nombre Vulgar">
+                <input class="Nombre_Vulgar" type="text" placeholder="Nombre Vulgar">
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Nombre Cientifico">
+                <input class="Nombre_Cientifico" type="text" placeholder="Nombre Cientifico">
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Largo Max">
+                <input class="Largo_Max" type="text" placeholder="Largo Max">
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Peso Promedio">
+                <input class="Peso_Promedio" type="text" placeholder="Peso Promedio">
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Donde pescar">
+                <input class="Donde_pescar" type="text" placeholder="Donde pescar">
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Epoca de Pesca">
+                <input class="Epoca_de_Pesca" type="text" placeholder="Epoca de Pesca">
             </div>
 
             <div class="action_btn">
                 <button type="submit" class="btn">Agregar</button>
-                <button type="submit" class="btn"><a href="../index.html">Cancelar</a></button>
+                <button type="button" class="btn"><a href="../index.html">Cancelar</a></button>
             </div>
         </form>
     </div>
+    <script src="/frontend/js/test_generador_agregar_datos.js"></script>
+    <script src="/frontend/js/fetchApiPost.js"></script>
 </body>
 </html>
