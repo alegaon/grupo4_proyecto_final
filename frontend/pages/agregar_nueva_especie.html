@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF_8">
-    <meta name="viewport" content="width=device_width, initial_scale=1.0">
-    <title>🐟   dePesca | nuevaEspecie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <title>dePesca | nuevaEspecie</title>
 </head>
 <body>
     <h2 id="titulo_especies_volver"><span><a href="../index.html">Volver a Especies</a></span></h2>
@@ -17,25 +17,25 @@
                 <input class="Nombre_Cientifico" type="text" placeholder="Nombre Cientifico">
             </div>
             <div class="input_box">
-                <input class="Largo_Max" type="text" placeholder="Largo Max">
+                <input class="Lugar" type="text" placeholder="Lugar">
             </div>
             <div class="input_box">
-                <input class="Peso_Promedio" type="text" placeholder="Peso Promedio">
+                <input class="Descripcion" type="text" placeholder="Descripcion">
             </div>
             <div class="input_box">
-                <input class="Donde_pescar" type="text" placeholder="Donde pescar">
+                <input class="Modalidades" type="text" placeholder="Dodalidades de pesca">
             </div>
             <div class="input_box">
                 <input class="Epoca_de_Pesca" type="text" placeholder="Epoca de Pesca">
             </div>
 
             <div class="action_btn">
-                <button type="submit" class="btn">Agregar</button>
+                <button type="submit" class="btn" id = "agregar">Agregar</button>
                 <button type="button" class="btn"><a href="../index.html">Cancelar</a></button>
             </div>
         </form>
     </div>
-    <script src="/frontend/js/test_generador_agregar_datos.js"></script>
-    <script src="/frontend/js/fetchApiPost.js"></script>
+    <script src="../js/fetchAPI.js"></script>
+    <script src="../js/agregar_datos.js"></script>
 </body>
 </html>

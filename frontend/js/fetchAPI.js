@@ -9,7 +9,7 @@ function  fetchAPI(url, method, callback, data = null) {
     const options = {
         method: method,
         headers: {
-            'Content_Type': 'application/json',
+            'Content-Type': 'application/json',
         },
         // Si responde con datos, lo transformo a JSON e incorporo como diccionaio
         body: data ? JSON.stringify(data) : null,  
@@ -20,6 +20,7 @@ function  fetchAPI(url, method, callback, data = null) {
             // Controlo si la repuesta de estado HTTP no está en el rango 200-299.
             // dentro del response, viene el 'status'
             if (!response.ok) {
+                // Si tengo un error, armo un diccionario para capturar los detalles
                 const error = new Error('Server response was not ok');
                 error.status = response.status;
                 error.statusText = response.statusText;
