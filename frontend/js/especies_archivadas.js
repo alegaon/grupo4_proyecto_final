@@ -45,10 +45,6 @@ function updateSpecies(especie){
     };
     console.log(url, especie.nombre_vulgar)
     fetchAPI(url, "PUT", (error, data) => {
-        // Borrar este cuando termine de fucionar
-        if (error){
-            console.log(error);
-        };
         // Actualiza la carga del html
         location.reload();
     },  formdata);
