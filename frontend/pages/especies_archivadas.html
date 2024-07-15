@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <link rel="icon" href="../resources/img/logo.svg" type="image/svg+xml">
+    <title>dePesca</title>
+
+    <!-- Incorporo estilos al html-->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <section id="titulo">
+            <h1>Peces en la <br> Argentina</h1>
+        </section>
+        <section class="menu_basico">
+            <h3 id="titulo_agregar_nueva_especie"><a href="agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
+            <h3 id="titulo_mostrar_especies"><a href="../index.html">Ver especies</a></h3>
+        </section>
+    </header>
+    <main>
+        <section class="contenedor_especies">
+            <article class="especies" id="art_especies">
+                <section class="nombres">
+                    <h2 id="nombre_vulgar">Pejerrey de mar</h2>
+                    <h5 id="nombre_cientifico">(Odontesthes argentinensis)</h5>
+                </section>
+                <section id="temporada_pesca">
+                    <h4 class="temporada"><span id="hdr_temporada">Temporada de pesca</span></h4>
+                    <p><span id="epoca">Noviembre a Marzo</span></p>
+                </section>
+                <section class="botonoes">
+                    <button class="row_button" id="view_button">Ver</button>
+                    <button class="row_button" id="update_button">Activar</button>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <script src="../js/fetchAPI.js"></script>
+    <script src="../js/especies_archivadas.js"></script>
+
+</body>
+</html>
