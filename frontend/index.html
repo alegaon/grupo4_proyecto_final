@@ -20,26 +20,21 @@
         </section>
     </header>
     <main>
-        <section>
-            <table id="tabla_especies" class="tabla_principal_especies">
-                <thead>
-                    <tr>
-                        <th>Nombre Vulgar</th>
-                        <th>Nombre Cientifico</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla_cuerpo">
-                    <tr id="tabla_modelo">
-                        <td id="td_nombre_vulgar">Alfreds Futterkiste</td>
-                        <td id="td_nombre_cientifico">Maria Anders</td>
-                        <td>
-                            <button class="row_button" id="view_button">Ver</button>
-                            <button class="row_button" id="del_button">Eliminar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="contenedor_especies">
+            <article class="especies" id="art_especies">
+                <section class="nombres">
+                    <h2 id="nombre_vulgar">Pejerrey de mar</h2>
+                    <h5 id="nombre_cientifico">(Odontesthes argentinensis)</h5>
+                </section>
+                <section id="temporada_pesca">
+                    <h4 class="temporada"><span id="hdr_temporada">Temporada de pesca</span></h4>
+                    <p><span id="epoca">Noviembre a Marzo</span></p>
+                </section>
+                <section class="botonoes">
+                    <button class="row_button" id="view_button">Ver</button>
+                    <button class="row_button" id="del_button">Eliminar</button>
+                </section>
+            </article>
         </section>
     </main>
 

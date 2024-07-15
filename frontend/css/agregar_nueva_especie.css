@@ -19,7 +19,9 @@ form {
 }
 
 .input_box input, .input_box textarea{
-    width: 95%;
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 50%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;

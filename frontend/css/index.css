@@ -38,55 +38,75 @@ section.menu_basico h3 {
     font-size: 16px; /* Tamaño de fuente más pequeño */
 }
 
-#tabla_especies {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 65%;
-    table-layout: auto;
-    margin: 20px auto; /* Centrar la tabla */
+.contenedor_especies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-#tabla_especies td, #tabla_especies th {
+.especies {
+    background-color: rgba(255,255,255, 0.3);
     border: 1px solid #ddd;
-    padding: 6px;
-    text-align: center;
-    width: auto;
-    white-space: nowrap; /* Evita que el texto se ajuste automáticamente en múltiples líneas */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Añade puntos suspensivos (...) si el texto es demasiado largo */
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#tabla_especies tr:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.especies section {
+    margin: 5px 0;
 }
 
-#tabla_especies th {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    background-color: #a0d4f1;
-    color: white;
+
+.temporada{
+    margin-bottom: 10px;
+}
+.botonoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nombre_vulgar {
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+
+#nombre_cientifico {
+    font-size: 0.7em;
+    margin-top: 0;
 }
 
 .row_button {
-    padding: 3px 8px;
-    border: none;
-    border-radius: 3px;
-    color: white;
-    cursor: pointer;
-    margin: 2px;
-}
-
-#view_button {
     background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#del_button {
+.row_button#del_button {
     background-color: #f44336;
 }
 
 .row_button:hover {
-    transform: scale(1.2);
-} 
+    opacity: 0.8;
+}
 
-
+@media (max-width: 525px) {
+    #titulo h1 {
+        font-size: 28px;
+    }
+}
