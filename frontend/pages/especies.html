@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial_scale=1.0">
-    <title>🐟   dePesca</title>
+    <link rel="icon" href="../resources/img/logo.svg" type="image/svg+xml">
+    <title>dePesca</title>
+
+    <!-- Incorporo estilos al html-->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/detalles.css">
+
 </head>
 <body>
     <header>
-        <h2 id="titulo_especies_volver"><span><a href="../index.html">Volver a Especies</a></span></h2>
+        <section id="titulo">
+            <h1>Peces en la <br> Argentina</h1>
+        </section>
+        <section class="menu_basico">
+            <h3 id="titulo_agregar_nueva_especie"><a href="../index.html">Mostrar Especies Activas</a></h3>
+            <h3 id="titulo_mostrar_especies_archivadas"><a href="especies_archivadas.html">Mostrar Especies Archivadas</a></h3>
+        </section>
     </header>
     <main>
-        <h1>Especies Archivadas</h1>
-        <div class="menu_basico">
-            <h3 id="titulo_agregar_nueva_especie"><a href="agregar_nueva_especie.html">Agregar Nueva Especie</a></h3>
-        </div>
-        <table id="tabla_principal_especies" class="tabla_principal_especies archivadas">
-            <tbody id="tbody_especies" class="tbody_especies">
-                <tr class="tr_titulos">
-                    <th class="th_nombre_vulgar">Nombre Vulgar</th>
-                    <th class="th_nombre_cientifico">Nombre Cientifico</th>
-                    <th class="th_largo_max">Largo Max</th>
-                    <th class="th_peso_promedio">Peso Promedio</th>
-                    <th class="th_donde_pescar">Donde pescar</th>
-                    <th class="th_epoca_de_pesca">Epoca de Pesca</th>
-                    <th class="th_acciones_btn"></th>
-                </tr>
-                <tr class="tr_datos_archivados">
-                    <td class="td_nombre_vugar">Boga</td>
-                    <td class="td_nombre_cientifico"><b>Leporinus Obtusidens</b></td>
-                    <td class="td_largo_max">50cm</td>
-                    <td class="td_peso_promedio">De 2 a 5 KG</td>
-                    <td class="td_donde_pescar">Río Paraná, Uruguay y en los ríos de la región del litoral</td>
-                    <td class="td_epoca_de_pesca">De primavera hasta principios de otoño</td>
-                    <td class="td_acciones_btn">
-                        <div class="action_btn">
-                            <button id="btn_desarchivar" type="submit" class="btn">Desarchivar</button>
-                            <button id="btn_editar" type="submit" class="btn">Editar</button>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <section class="contenedor_especies">
+            <article class="especies" id="art_especies">
+                <section class="nombres">
+                    <h2 id="nombre_vulgar">Pejerrey de mar</h2>
+                    <h5 id="nombre_cientifico">(Odontesthes argentinensis)</h5>
+                </section>
+                <section class="lugar">
+                    <h2 id="lugar_titulo">Pejerrey de mar</h2>
+                    <h5 id="lugar_dato">(Odontesthes argentinensis)</h5>
+                </section>
+                <section class="descripcion">
+                    <h2 id="descripcion_titulo">Pejerrey de mar</h2>
+                    <h5 id="descripcion_dato">(Odontesthes argentinensis)</h5>
+                </section>
+                <section class="modalidades">
+                    <h2 id="modalida_titulo">Pejerrey de mar</h2>
+                    <h5 id="modalida_dato">(Odontesthes argentinensis)</h5>
+                </section>
+
+                <section id="temporada_pesca">
+                    <h4 class="temporada"><span id="hdr_temporada">Temporada de pesca</span></h4>
+                    <p><span id="epoca">Noviembre a Marzo</span></p>
+                </section>
+                <section class="botonoes">
+                    <button class="row_button" id="view_button">Ver</button>
+                    <button class="row_button" id="editar_button">Editar</button>
+                </section>
+            </article>
+        </section>
     </main>
 
+    <script src="../js/fetchAPI.js"></script>
+    <script src="../js/detallesEspecies.js"></script>
 
-    <script src="js/especies_archivadas.js"></script>
+
+
 
 </body>
 </html>

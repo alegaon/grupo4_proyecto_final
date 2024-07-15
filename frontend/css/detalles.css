@@ -1,0 +1,14 @@
+:root{
+    --color-btn-editar:rgba(25,31,52,1.0);
+}
+
+
+
+.row_button#view_button{
+    display: none;
+}
+
+.row_button#editar_button{
+    background-color: var(--color-btn-editar);
+}
+
