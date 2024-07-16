@@ -110,6 +110,9 @@ section.menu_basico h3 {
 .row_button#del_button {
     background-color: #f44336;
 }
+#update_button{
+    background-color: #f44336;  
+}
 
 .row_button:hover {
     opacity: 0.8;

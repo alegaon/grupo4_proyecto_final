@@ -37,11 +37,13 @@ form {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #160bb8;
+    background-color: rgba(25,31,52,1.0);
     color: white;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+
+
 }
 
 .action_btn .btn a {
@@ -50,5 +52,10 @@ form {
 }
 
 .action_btn .btn:hover {
-    background-color: #45a049;
+    opacity: .7;
+}
+
+#cancelar-btn{
+    background-color: #f44336;
+
 }
