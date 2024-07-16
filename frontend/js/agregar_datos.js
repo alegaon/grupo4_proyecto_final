@@ -8,6 +8,7 @@ let consulta_id = new URLSearchParams(window.location.search);
 const mi_id_especie = consulta_id.get('id');
 
 function agregar_nueva_especie() {
+
     document.getElementById('speciesForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
@@ -65,6 +66,9 @@ function carga_valores_en_form(value) {
 function agregra_o_actualizar() {
     // si la URL viene con id entonces actualizar 
     if(mi_id_especie !== null) {
+        //cambiamos a que el boton ahora diga "EDITAR"
+        submitButton.innerHTML = "Editar" 
+
         document.querySelector("#form-titulo").innerHTML = "Editar Especie";
         carga_valores_en_form(true);
 
