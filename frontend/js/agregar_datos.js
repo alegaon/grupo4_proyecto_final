@@ -35,12 +35,12 @@ function agregar_nueva_especie() {
 
 function editar_especie(event) {
     let data = {
-        'nombre_vulgar':document.querySelector("#nombre_vulgar").value,
-        'nombre_cientifico':document.querySelector("#nombre_cientifico").value,
-        'descripcion':document.querySelector("#descripcion").value,
-        'lugar':document.querySelector("#lugar").value,
-        'modalidades':document.querySelector("#modalidades").value,
-        'epoca':document.querySelector("#epoca_de_pesca").value,
+        nombre_vulgar :document.querySelector("#nombre_vulgar").value,
+        nombre_cientifico:document.querySelector("#nombre_cientifico").value,
+        descripcion:document.querySelector("#descripcion").value,
+        lugar: document.querySelector("#lugar").value.split(',').map(item => item.trim()),
+        modalidades: document.querySelector("#modalidades").value.split(',').map(item => item.trim()),
+        epoca:document.querySelector("#epoca_de_pesca").value,
     }
 
     let url = `${BASE_URL}/api/especies/update/${mi_id_especie}`;
@@ -70,7 +70,6 @@ function agregra_o_actualizar() {
 
         let url = `${BASE_URL}/api/especies/${mi_id_especie}`;
         fetchAPI(url, "GET", (error, data) => {
-            console.log(data)
             document.querySelector("#nombre_vulgar").value = data.nombre_vulgar;
             document.querySelector("#nombre_cientifico").value = `(${data.nombre_cientifico})`;
             document.querySelector("#lugar").value = data.lugar;

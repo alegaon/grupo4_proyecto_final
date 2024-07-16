@@ -52,8 +52,8 @@ function cargar_vista_especie(id_especie) {
 
 function editarEspecie(id_de_la_especie){
     // redirecciona a nuestro formulario html de agregar especies nuevas con su id
-    let url = 'http://127.0.0.1:5500/frontend/pages/agregar_nueva_especie.html?id='
-    window.location.replace(url + id_de_la_especie);
+    let url = `agregar_nueva_especie.html?id=${id_de_la_especie}`;
+    window.location.replace(url);
 };
 
 
