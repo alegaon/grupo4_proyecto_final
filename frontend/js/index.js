@@ -33,8 +33,7 @@ function cargar_articulos(){
 };
 
 function viewSpecies(especie) {
-    // Implementar la funcionalidad para ver los detalles de la especie
-    alert(`Ver detalles de la especie con ID: ${especie.id}`);
+    // click en boton VER para ir a detalles de la especie
     window.location.href = `pages/especies.html?id=${especie.id}`;
 }
 
